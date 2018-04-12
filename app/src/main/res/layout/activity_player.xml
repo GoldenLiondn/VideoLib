@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.videolib.PlayerActivity"
+
+    >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:src="@drawable/search"
+        android:visibility="invisible"
+        android:layout_gravity="start"
+        android:layout_height="50dp"
+        android:layout_width="50dp" />
+
+    <ImageButton
+        android:id="@+id/stop"
+        android:src="@drawable/stop"
+        android:visibility="invisible"
+        android:layout_gravity="top|center"
+        android:layout_height="50dp"
+        android:layout_width="50dp"/>
+
+    <ImageButton
+        android:id="@+id/loopOrNext"
+        android:src="@drawable/loop"
+        android:visibility="invisible"
+        android:layout_gravity="end"
+        android:layout_height="50dp"
+        android:layout_width="50dp"/>
+
+
+</FrameLayout>
